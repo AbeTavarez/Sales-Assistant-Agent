@@ -53,8 +53,11 @@ with st.form("company_info", clear_on_submit=True):
 
             # TODO: Create prompt <=================
             prompt = """
-      
-      """
+            
+            
+            Company info: {company_information}
+            Product name: {product_name}
+            """
 
             # Prompt Template
             prompt_template = ChatPromptTemplate([("system", prompt)])
